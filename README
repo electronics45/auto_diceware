@@ -1,0 +1,27 @@
+Preface
+--------
+The xkcd comic "password strength" (http://xkcd.com/936/) suggests using
+"four random common words" as a relatively strong password.  Unfortunately
+humans are not good at being random.  Diceware can help with this.
+
+Diceware is a method used for picking random words which consists of
+rolling a pair of dice, and then using the resulting number to looking up
+a word on a list.
+
+I don't know about the rest of the internet, but I for one, can't be
+bothered pulling out dice, and looking up words, so I wrote this small
+shell script to do it for me.
+
+Overview
+---------
+auto_diceware uses strong entropy from /dev/random to get a random number
+which is used to look up a random word from the provided word list.
+
+Installation
+---------
+install 'calc' (package: apcalc)
+
+Usage
+---------
+./auto_diceware -h
+
